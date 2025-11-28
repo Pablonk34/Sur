@@ -1,0 +1,34 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #222;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  color: #045c41;
+  font-size: 24px;
+  border-bottom: 2px solid #045c41;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #045c41;
+  margin-top: 30px;
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+p {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+#fechaActualizacion {
+  margin-top: 40px;
+  font-style: italic;
+  color: #444;
+}

@@ -1,80 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>📊 Últimos Datos Económicos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 30px;
-            background-color: #f0f4f8;
-            color: #333;
-        }
-        h1 {
-            color: #004080;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.05);
-        }
-        th, td {
-            padding: 10px 15px;
-            border: 1px solid #ccc;
-            text-align: left;
-        }
-        th {
-            background-color: #004080;
-            color: white;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        .error {
-            color: red;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title><$UR> Commodities</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>📊 Últimos Datos Económicos</h1>
-    <div id="contenido">Cargando datos...</div>
+  <h1>Commodities</h1>
+  <div id="contenido"></div>
+  <p id="fechaActualizacion"><strong>Fecha de actualización:</strong> Cargando...</p>
 
-    <script>
-        fetch("datos.json")
-            .then(response => {
-                if (!response.ok) throw new Error("No se pudo cargar datos.json");
-                return response.json();
-            })
-            .then(data => {
-                const container = document.getElementById("contenido");
-                const keysOrden = Object.keys(data); // orden original del JSON
-
-                let html = `<table>
-                                <thead>
-                                    <tr>
-                                        <th>🔖 Campo</th>
-                                        <th>📈 Valor</th>
-                                    </tr>
-                                </thead>
-                                <tbody>`;
-
-                for (const key of keysOrden) {
-                    html += `
-                        <tr>
-                            <td>${key}</td>
-                            <td>${data[key]}</td>
-                        </tr>`;
-                }
-
-                html += `</tbody></table>`;
-                container.innerHTML = html;
-            })
-            .catch(error => {
-                document.getElementById("contenido").innerHTML =
-                    `<p class="error">❌ Error al cargar los datos: ${error.message}</p>`;
-            });
-    </script>
+  <script src="script.js"></script>
 </body>
 </html>
