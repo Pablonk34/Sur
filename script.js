@@ -11,9 +11,10 @@ fetch('datos.json')
     };
 
     // 🟢 1. Riesgo País
+     contenedor.innerHTML += `<h2>Commodities</h2>`;
     contenedor.innerHTML += `<h3>Riesgo País</h3>`;
-    contenedor.innerHTML += `<p><strong>Ecuador:</strong> ${formatear(data.RiesgoPaisEcuador)} (Fecha: ${data.FechaRiesgoPaisEcuador})</p>`;
-    contenedor.innerHTML += `<p><strong>Perú:</strong> ${formatear(data.RiesgoPaisPeru)} (Fecha: ${data.FechaRiesgoPaisPeru})</p>`;
+    contenedor.innerHTML += `<p><strong>Ecuador:</strong> ${data.RiesgoPaisEcuador} (Fecha: ${data.FechaRiesgoPaisEcuador})</p>`;
+    contenedor.innerHTML += `<p><strong>Perú:</strong> ${data.RiesgoPaisPeru} (Fecha: ${data.FechaRiesgoPaisPeru})</p>`;
 
     // 🌽 2. Commodities Agrícolas
     contenedor.innerHTML += `<h3>Commodities Agrícolas</h3>`;
@@ -61,3 +62,4 @@ fetch('datos.json')
     document.getElementById('contenido').textContent = "Error al cargar el JSON.";
     console.error("❌ Error al cargar datos.json:", error);
   });
+
