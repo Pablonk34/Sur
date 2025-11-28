@@ -1,16 +1,16 @@
 {
-    "FechaRiesgoPaisEcuador": "2025-11-28",
+    "FechaRiesgoPaisEcuador": "2025-11-27",
     "RiesgoPaisEcuador": 571.0,
     "PrecioBanano": "$7,50",
     "FechaRiesgoPaisPeru": "2025-11-26",
     "RiesgoPaisPeru": 130.0,
     "Oro": 4157.9073418665,
     "Plata": 53.1249729395,
-    "WTI": 59.19,
-    "Cacao": 5370.0,
-    "Maiz": 445.88,
-    "Trigo": 536.4,
-    "Brent": 62.96,
+    "WTI": 58.41,
+    "Cacao": 5550.0,
+    "Maiz": 447.75,
+    "Trigo": 538.5,
+    "Brent": 62.3,
     "Argentina": 1448.0,
     "Colombia": 3748.9595,
     "Venezuela": 245.6697,
@@ -22,5 +22,5 @@
     "Bolivia": 6.9206,
     "Mexico": 18.3485,
     "Eurozona": 0.8625,
-    "FechaRegistro": "2025-11-28 12:33:19"
+    "FechaRegistro": "2025-11-28 14:40:44"
 }
